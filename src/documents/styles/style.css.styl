@@ -1,10 +1,55 @@
-a, a:link
-	cursor pointer
+.nameplate
+	margin-bottom: 10px;
+	margin-top: 10px;
+	max-width: 270px;
 
-body
-	padding-top 60px
+	.nameplate-image
+		width: 90px;
+		height: 90px;
+		display: inline-block;
+		border: 3px solid #999;
+		vertical-align: top;
+		margin-left: 10px;
 
-table
-	tfoot, tbody
-		th
-			border-top 1px solid #DDD
+	.nameplate-details
+		display: inline-block;
+		width: 150px;
+		height: 96px;
+		vertical-align: top;
+		margin: 10px;
+		margin-right: 0px;
+		margin-top: 0px;
+
+		h1
+			font-size: 20px;
+			margin: 0px;
+
+		.tagline
+			font-style: italic;
+
+	a
+		text-decoration: none;
+		color: inherit;
+
+.post
+	margin-bottom: 30px
+
+	h2
+		a
+			color: #333;
+		margin-bottom: 0px;
+
+.page .page-date,
+.post .post-date
+		color: #999;
+		margin-bottom: 10px;
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover
+	background-color: inherit;
+	color: black;
+
+footer
+	padding-top: 40px;
+	font-size: 10px;
+	color: #999;

@@ -19,18 +19,18 @@
 	<%- @getBlock('meta').toHTML() %>
 
 	<!-- Mobile viewport optimized: h5bp.com/viewport -->
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- DocPad Meta Information -->
 	<%- @getBlock('meta').toHTML() %>
 
 
 	<!-- Icons -->
-    <link rel="shortcut icon" href="ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" type='image/png' href="/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-57.png">
 
 	<!-- Shims: IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -38,37 +38,58 @@
 	<![endif]-->
 
 	<!-- Styles -->
-	<%- @getBlock('styles').add(["/vendor/twitter-bootstrap/css/bootstrap.css","/vendor/twitter-bootstrap/css/bootstrap-responsive.css","/styles/style.css"]).toHTML() %>
+	<%- @getBlock('styles').add(["/vendor/bootstrap/css/bootstrap.css","/vendor/bootstrap/css/bootstrap-responsive.css","/styles/style.css","/styles/github.css"]).toHTML() %>
 </head>
 <body>
-	<!-- Markup -->
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="brand" href="/">Welcome</a>
-				<ul class="nav">
-					<% for document in @getCollection('pages').toJSON(): %>
-						<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
-							<a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
-						</li>
-					<% end %>
-				</ul>
+	<div class='row'>
+		<div class='span3'>
+			<div class='nameplate'>
+				<a href='/'>
+					<img class='nameplate-image img-rounded' src='/images/me.png'/>
+					<div class='nameplate-details'>
+						<h1>Ben Delarre</h1>
+						<div class='tagline'>Coder, maker, hacker, infrequent blogger.</div>
+					</div>
+				</a>
 			</div>
+			<ul class="nav nav-list">
+				<li class='nav-header'>Resources</li>
+				<% for document in @getCollection('pages').toJSON(): %>
+					<li class="<%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>">
+						<a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
+					</li>
+				<% end %>
+				<li><a target='_blank' href='http://www.github.com/benjamind'>GitHub</a></li>
+
+				<li class='divider'></li>
+
+				<li class='nav-header'>Recent Posts</li>
+				<% posts = @getCollection('posts') %>
+				<% for i in [0...Math.min(10,posts.length)]: %>
+					<% document = posts.at(i).toJSON() %>
+					<li class="<%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>">
+						<a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
+					</li>
+				<% end %>
+
+				<li class='divider'></li>
+
+				<% if  @document.relatedDocuments and @document.relatedDocuments.length: %>
+					<li class='nav-header'>Related Posts</li>
+					<% for document in @document.relatedDocuments: %>
+						<li><a href="<%= document.url %>"><%= document.title %></a></li>
+					<% end %>
+				<% end %>
+			</ul>
+		</div>
+		<div class='span9'>
+			<section id="content" class="content">
+				<%- @content %>
+			</section>
+			<footer>
+				<p>Copyright &copy; 2012 Ben Delarre. All rights reserved. You may freely use and modify the code examples on this site for both commercial and non-commercial projects. This site was created with <a href='http://www.docpad.org'>DocPad</a> and <a href='http://twitter.github.com/bootstrap'>Twitter Bootstrap</a> many thanks to all those who made these projects possible!</p>
+			</footer>
 		</div>
 	</div>
-	<div class="container">
-		<section id="content" class="content">
-			<%- @content %>
-		</section>
-		<footer>
-			<p>&copy; Company 2012</p>
-			<p style="float:right;">
-				This website was last updated at <%= @site.date.toISOString() %>
-			</p>
-		</footer>
-	</div><!-- /container -->
-
-	<!-- Scripts -->
-	<%- @getBlock('scripts').add(["/vendor/jquery.js","/vendor/log.js","/vendor/modernizr.js","/scripts/script.js"]).toHTML() %>
 </body>
 </html>

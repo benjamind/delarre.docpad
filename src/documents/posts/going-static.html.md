@@ -1,7 +1,7 @@
 ---
 title: Going Static
 layout: post
-tags: ['docpad','post','site','node.js']
+tags: ['docpad','site','node.js']
 date: 11/09/2012
 ---
 After numerous Wordpress disasters, both of my own making and that of nefarious bots and spammers taking over the site, I've decided that its time to start over. I'm sure there will be further rants on the topic of the many faults (and virtues) of Wordpress at a later date, but for today I've had enough. This time I'm going with an alternative approach using [Node.js](http://www.nodejs.org) and [DocPad](https://github.com/bevry/docpad) to generate the site statically.

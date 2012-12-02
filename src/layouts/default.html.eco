@@ -91,5 +91,6 @@
 			</footer>
 		</div>
 	</div>
+	<%- @getBlock('scripts').toHTML() %>
 </body>
 </html>

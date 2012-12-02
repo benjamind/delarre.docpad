@@ -1,7 +1,7 @@
 ---
 title: Blogging with DocPad
 layout: post
-tags: ['docpad','post','site','node.js']
+tags: ['docpad','site','node.js']
 date: 11/10/2012
 ---
 In the last post I explained a little about why I've moved this site away from Wordpress to a static generator approach using [DocPad](https://github.com/bevry/docpad) where I generate this blog from a set of files rather than from a database. This time I'm going to detail a little bit of how DocPad works and the changes I've made to get this site running as you see it now.

@@ -1,7 +1,7 @@
 ---
 title: Creating the index page
 layout: post
-tags: ['docpad','post','site','node.js']
+tags: ['docpad','site','node.js']
 date: 11/12/2012
 ---
 Now that we've got Docpad up and running, the last thing thats absolutely essential is to get the site showing the blog posts on the index page. You'd think this would be simple, and it really is, but it stumped me for a little while before I found the appropriate documentation.

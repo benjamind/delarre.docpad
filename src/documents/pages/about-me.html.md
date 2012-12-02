@@ -1,7 +1,7 @@
 ---
 title: About Me
 layout: page
-tags: ['page', 'about-me']
+tags: ['about-me']
 pageOrder: 1
 date: 11/10/2012
 ---

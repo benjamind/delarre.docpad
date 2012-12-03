@@ -53,7 +53,7 @@ Now that highlightjs is part of the build process of the documents in my site, I
 
 Here we're using the backtick (`) character to let us specify the language of the code block. Normal code blocks in Markdown are just one tab indented, but since we want to give this code block a specific language for highlighting we use the backtick syntax above. Finally to get the syntax highlighting to actually higlight your code you will need to add some CSS to your site to add the appropriate colorization. I like the GitHub style so I've included the github.css in my styles folder from the original [HighlightJS project here](https://github.com/isagalaev/highlight.js/tree/master/src/styles).
 
-##Summary
+###Summary
 The Twitter Bootstrap skeleton has got us up and running remarkably quickly. I really like the fact that I now have a really fast and easy way to create this blog, and that it all fits in with my normal development work flow. No longer do I have to mess around with Wordpress malware, or worry about database backups.
 
 I still haven't dug into the templating capabilities too much yet, for instance my blog right now is just a list of articles. I would quite like to break them up into summary sections and full articles with a `more...` link. I'd also like related article links to be automatically generated from post tags. These are all things to look into for my next post.

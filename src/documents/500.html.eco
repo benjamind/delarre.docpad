@@ -2,6 +2,7 @@
 layout: 'default'
 title: '500 Internal Server Error'
 dynamic: true
+sitemap: false
 ---
 
 <div class="hero-unit">

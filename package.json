@@ -39,7 +39,8 @@
 		"docpad-plugin-text": "2.x",
 		"docpad-plugin-highlightjs": "~2.1.1",
 		"docpad-plugin-related": "*",
-		"docpad-plugin-paged": "*"
+		"docpad-plugin-paged": "*",
+		"docpad-plugin-sitemap": "*"
 	},
 	"devDependencies": {
 		"docpad-plugin-livereload": "2.x"

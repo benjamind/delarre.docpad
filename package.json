@@ -40,7 +40,8 @@
 		"docpad-plugin-highlightjs": "~2.1.1",
 		"docpad-plugin-related": "*",
 		"docpad-plugin-paged": "*",
-		"docpad-plugin-sitemap": "*"
+		"docpad-plugin-sitemap": "*",
+		"docpad-plugin-cleanurls": "*"
 	},
 	"devDependencies": {
 		"docpad-plugin-livereload": "2.x"

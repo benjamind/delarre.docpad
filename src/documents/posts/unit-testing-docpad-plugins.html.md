@@ -145,9 +145,10 @@ Not good. In order to get this working I had to turn to [Benjamin Lupton](http:/
 
 1. `git clone https://github.com/bevry/docpad.git` - Clone the DocPad respository into your workspace (not your plugin folder)
 2. `cd docpad` - move into the new folder
-3. `npm install` - install the DocPad dependencies locally
+5. `npm install -g coffee-script` - install coffee script so we can build docpad
+3. `cake setup` - setup the dev environment for compiling
 4. `npm link` - link the DocPad folder you have now created into npm, this means when you use DocPad on your machine it points to this working folder
-5. `make compile` - compile DocPad so its ready to use
+5. `cake compile` - compile DocPad so its ready to use
 
 Now we need to do something similar for your plugin:
 

@@ -24,14 +24,14 @@ Be warned, when XBMC is updating its library its basically unusable, the perform
 
 ### Spotify with Spotimc
 
-Next up I wanted music in my living room, I had two options here, Spotimc which is a plugin for XBMC that was incredibly easy to setup thanks to the work of [welly_59 from the stmlabs forum](http://forum.stmlabs.com/showthread.php?pid=50586#pid50586), just (grab this file)[http://ge.tt/4RzFM9W/v/0?c], put it somewhere XBMC can reach it on your network then go to `System -> Addons -> Install from Zip` and browse to the file.. It won't show you much happening, but a short while later you'll get a little popup telling you the plugin was added. If you then go to `Music -> Addons` from the main menu you'll see Spotimc. On first start it will do some more installation and setup which will require a reboot, after that though you should be greeted with a login screen and be up and running.
+Next up I wanted music in my living room, I had two options here, Spotimc which is a plugin for XBMC that was incredibly easy to setup thanks to the work of [welly_59 from the stmlabs forum](http://forum.stmlabs.com/showthread.php?pid=50586#pid50586), just [grab this file](http://ge.tt/4RzFM9W/v/0?c), put it somewhere XBMC can reach it on your network then go to `System -> Addons -> Install from Zip` and browse to the file.. It won't show you much happening, but a short while later you'll get a little popup telling you the plugin was added. If you then go to `Music -> Addons` from the main menu you'll see Spotimc. On first start it will do some more installation and setup which will require a reboot, after that though you should be greeted with a login screen and be up and running.
 
 
 ### A better way - Mopidy
 
 Thats all well and good, but I don't really want to have to put my TV on just to play music.
 
-So I spent this morning looking into other alternatives. The best of which appears to be [Mopidy](http://www.mopidy.com/). Mopidy is a music server that will play Spotify streams as well as search and play local media. But best of all there's a variety of different mobile clients that will control it since its [MPD compatible](http://en.wikipedia.org/wiki/Music_Player_Daemon). This means once its setup you can control it from the comfort of your mobile and play music without the need to use your television!
+So I spent this morning looking into other alternatives. The best of which appears to be [Mopidy](http://www.mopidy.com/). Mopidy is a music server that will play Spotify streams as well as search and play local media. But best of all there's a variety of different mobile clients that will control it since its [MPD compatible](http://en.wikipedia.org/wiki/Music_Player_Daemon). This means once its setup you can control it from the comfort of your mobile and play music without the need to use your television! There's a great client called [MPDroid](https://play.google.com/store/apps/details?id=com.namelessdev.mpdroid&hl=en) available on the Play Store, it lets you playback your Spotify playlists and search for tracks / artists / albums.
 
 Getting it setup was a little trickier than I had hoped though, first off there's no installation instructions for Xbian available. So I followed the rough outline of the [instructions for Debian Wheezy](http://docs.mopidy.com/en/latest/installation/raspberrypi/).
 

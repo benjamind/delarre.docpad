@@ -6,4 +6,8 @@ layout: default
 	<h2><%= @document.title %></h2>
 	<div class="post-date"><%= @document.date.toLocaleDateString() %></div>
 	<div class="post-content"><%- @content %></div>
+
+	<div class="comments">
+    	<a class="moot" href="http://api.moot.it/delarre/blog#<%= @document.slug %>"></a>
+    </div>
 </article>

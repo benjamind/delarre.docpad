@@ -32,6 +32,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72.png">
     <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-57.png">
 
+	<!-- (1) Moot look and feel -->
+	<link rel="stylesheet" href="//cdn.moot.it/latest/moot.css"/>
+
+	<!-- (1) Moot depends on jQuery v1.7 or greater -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<!-- (1) Moot client application -->
+	<script src="//cdn.moot.it/latest/moot.min.js"></script>
+
 	<!-- Shims: IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
 		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

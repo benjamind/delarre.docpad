@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<h1>Pages tagged with '<%= @document.tag %>'</h1>
+
+<ul>
+<% for doc in @getCollection('documents').findAll({tags: '$in': @document.tag}).toJSON(): %>
+    <li>
+    	<a href="<%= doc.url %>"><%= doc.title %></a>
+		<div class="post-date"><%= @document.date.toLocaleDateString() %></div>
+    </li>
+<% end %>
+</ul>

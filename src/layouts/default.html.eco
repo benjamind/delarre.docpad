@@ -104,6 +104,16 @@
 						<li><a href="<%= document.url %>"><%= document.title %></a></li>
 					<% end %>
 				<% end %>
+
+				<li class='nav-header'>Tags</li>
+				<li><ul class='tags'>
+				<% for tag, data of @getTagCloud(): %>
+					<li>
+						<a href="<%= data.url %>" data-tag-count="<%= data.count %>" data-tag-weight="<%= data.weight %>" style="font-size: <%= 8 + (data.weight * 20) %>px"><%= tag %></a>
+					</li>
+				<% end %>
+				</ul></li>
+				</li>
 			</ul>
 		</div>
 		<div class='span9'>

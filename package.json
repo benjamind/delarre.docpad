@@ -1,50 +1,51 @@
 {
-	"name": "delarre.docpad",
-	"version": "0.1.0",
-	"description": "Docpad based website to be hosted at www.delarre.net for my personal blog.",
-	"homepage": "https://github.com/benjamind/delarre.docpad",
-	"keywords": [
-		"docpad-skeleton",
-		"docpad",
-		"website",
-		"bootstrap",
-		"twitter bootstrap",
-		"blog"
-	],
-	"author": "Ben Delarre <ben@delarre.net> (http://delarre.net)",
-	"maintainers": [
-		"Ben Delarre <ben@delarre.net> (http://delarre.net)"
-	],
-	"contributors": [
-		"Ben Delarre <ben@delarre.net> (http://delarre.net)"
-	],
-	"bugs": {
-		"url": "https://github.com/benjamind/delarre.docpad/issues"
-	},
-	"repository" : {
-		"type" : "git",
-		"url" : "http://github.com/benjamind/delarre.docpad.git"
-	},
-	"engines" : {
-		"node": "0.10.x",
-		"npm": "1.1.x"
-	},
-	"dependencies": {
-		"docpad": "*",
-		"docpad-plugin-coffeescript": "*",
-		"docpad-plugin-eco": "*",
-		"docpad-plugin-marked": "*",
-		"docpad-plugin-partials": "*",
-		"docpad-plugin-stylus": "*",
-		"docpad-plugin-text": "*",
-		"docpad-plugin-highlightjs": "*",
-		"docpad-plugin-related": "*",
-		"docpad-plugin-paged": "*",
-		"docpad-plugin-sitemap": "*",
-		"docpad-plugin-cleanurls": "*"
-	},
-	"devDependencies": {
-		"docpad-plugin-livereload": "*"
-	},
-	"main": "node_modules/docpad/bin/docpad-server"
+  "name": "delarre.docpad",
+  "version": "0.1.0",
+  "description": "Docpad based website to be hosted at www.delarre.net for my personal blog.",
+  "homepage": "https://github.com/benjamind/delarre.docpad",
+  "keywords": [
+    "docpad-skeleton",
+    "docpad",
+    "website",
+    "bootstrap",
+    "twitter bootstrap",
+    "blog"
+  ],
+  "author": "Ben Delarre <ben@delarre.net> (http://delarre.net)",
+  "maintainers": [
+    "Ben Delarre <ben@delarre.net> (http://delarre.net)"
+  ],
+  "contributors": [
+    "Ben Delarre <ben@delarre.net> (http://delarre.net)"
+  ],
+  "bugs": {
+    "url": "https://github.com/benjamind/delarre.docpad/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/benjamind/delarre.docpad.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.x"
+  },
+  "dependencies": {
+    "docpad": "*",
+    "docpad-plugin-coffeescript": "*",
+    "docpad-plugin-eco": "*",
+    "docpad-plugin-marked": "*",
+    "docpad-plugin-partials": "*",
+    "docpad-plugin-stylus": "*",
+    "docpad-plugin-text": "*",
+    "docpad-plugin-highlightjs": "*",
+    "docpad-plugin-related": "*",
+    "docpad-plugin-paged": "*",
+    "docpad-plugin-sitemap": "*",
+    "docpad-plugin-cleanurls": "*",
+    "docpad-plugin-tagging": "~2.0.1"
+  },
+  "devDependencies": {
+    "docpad-plugin-livereload": "*"
+  },
+  "main": "node_modules/docpad/bin/docpad-server"
 }

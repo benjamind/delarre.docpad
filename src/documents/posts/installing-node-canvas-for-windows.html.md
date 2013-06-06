@@ -1,7 +1,7 @@
 ---
 title: Installing node-canvas for Windows
 layout: post
-tags: ['node','node-canvas','node.js']
+tags: ['node-canvas','node.js']
 date: 01/23/2013
 ---
 I've recently been experimenting with [node.js](http://nodejs.org) for a possible new side project. So far my experience has been great, there's a lot of fun to be had working with Node and there's a massive raft of libraries available to make your life really easy.

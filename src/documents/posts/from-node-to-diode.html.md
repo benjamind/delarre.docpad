@@ -4,6 +4,7 @@ layout: post
 tags: ['led','arduino','raspberry pi','node.js', 'diodome']
 date: 06/04/2013
 ---
+<iframe style="float: right; margin-left: 32px" src="http://www.indiegogo.com/project/410561/widget/3287906" width="224px" height="486px" frameborder="0" scrolling="no"></iframe>
 I have a confession to make. I'm an LED addict. If it involves making some blinkenlights I'm your man. In 2010 I helped build the [Illuminatrix](http://cwd.co.uk/illuminatrix), a 4ft x 4ft wall of LEDs nestled inside ping pong balls that displayed hundreds of animations from people all around the world. This was my first big electronics project, besides a few kits I'd built and some awful attempts at implementing various audio syntheziser circuits I had found online. But I officially caught the hacker bug back then and that project inspired a lot of my work over the last few years.
 
 This year we decided to build another project for the Burning Man festival. We're calling it the [Diodome](http://diodome.heroku.com) and its an 18ft geodesic dome containing hundreds of LEDs. Obviously.
@@ -132,7 +133,7 @@ void setup() {
   for (int i=0; i < NUM_LEDS*3; i++) {
     colorValues[i] = 0;
   }
-  
+
   // initialize the strip to the current values
   for(int i=0; i<NUM_LEDS; i++) {
     int d = i*3;
@@ -143,7 +144,7 @@ void setup() {
   strip.show();
 
    //Initialize serial and wait for port to open:
-  Serial.begin(115200); 
+  Serial.begin(115200);
   while (!Serial) {
     ; // wait for port
   }
